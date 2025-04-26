@@ -30,5 +30,15 @@ RSpec.describe StringCalculator do
         end
       end
     end
+
+    context 'with custom delimiters' do
+      it 'handles single-character delimiter' do
+        expect(described_class.add("//;\n1;2")).to eq(3)
+      end
+
+      it 'handles multi-character delimiter' do
+        expect(described_class.add("//[***]\n1***2***3")).to eq(6)
+      end
+    end
   end
 end
