@@ -1,6 +1,31 @@
 {
   "RSpec": {
-    "coverage": {},
-    "timestamp": 1745704390
+    "coverage": {
+      "/home/neosoft/Desktop/string_calculator/spec/string_calculator_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          2,
+          null,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/home/neosoft/Desktop/string_calculator/lib/string_calculator.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1745704770
   }
 }
