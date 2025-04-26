@@ -13,7 +13,7 @@
       <img src="./assets/0.13.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2025-04-27T04:10:59+05:30">2025-04-27T04:10:59+05:30</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2025-04-27T04:18:00+05:30">2025-04-27T04:18:00+05:30</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -29,7 +29,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.43
+         2.33
        </span>
     </span> hits/line
     )
@@ -42,8 +42,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>51</b> relevant lines,
-    <span class="green"><b>51</b> lines covered</span> and
+    <b>52</b> relevant lines,
+    <span class="green"><b>52</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -83,11 +83,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#5c7b9e992142671aac99c13ce40ff8ae7e37f13b" class="src_link" title="lib/string_calculator/delimiter_parser.rb">lib/string_calculator/delimiter_parser.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">18</td>
-            <td class="cell--number">9</td>
-            <td class="cell--number">9</td>
+            <td class="cell--number">21</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">10</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.67</td>
+            <td class="cell--number">2.10</td>
             
           </tr>
         
@@ -366,8 +366,8 @@
     
 
     <div class="t-line-summary">
-      <b>9</b> relevant lines.
-      <span class="green"><b>9</b> lines covered</span> and
+      <b>10</b> relevant lines.
+      <span class="green"><b>10</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -484,29 +484,29 @@
 
             
 
-            <code class="ruby">      match = input.match(DELIMITER_REGEX)</code>
+            <code class="ruby">      return [&#39;,&#39;, input] unless input.start_with?(&#39;//&#39;)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="7" data-linenumber="11">
-            
-              <span class="hits">7</span>
-            
-
-            
-
-            <code class="ruby">      return [&#39;,&#39;, input] unless match</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="12">
+          <li class="never" data-hits="" data-linenumber="11">
             
 
             
 
             <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="12">
+            
+              <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">      match = input.match(DELIMITER_REGEX)</code>
           </li>
         </div>
       
@@ -518,12 +518,44 @@
 
             
 
+            <code class="ruby">      raise &#39;Invalid custom delimiter format&#39; unless match</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+
+            
+
+            <code class="ruby">      # Check for multi-char (e.g., [***]) or single-char (e.g., ;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="16">
+            
+              <span class="hits">2</span>
+            
+
+            
+
             <code class="ruby">      delimiter = match[1] || match[2]</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="14">
+          <li class="covered" data-hits="2" data-linenumber="17">
             
               <span class="hits">2</span>
             
@@ -535,7 +567,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="15">
+          <li class="covered" data-hits="2" data-linenumber="18">
             
               <span class="hits">2</span>
             
@@ -547,7 +579,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="16">
+          <li class="never" data-hits="" data-linenumber="19">
             
 
             
@@ -557,7 +589,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="17">
+          <li class="never" data-hits="" data-linenumber="20">
             
 
             
@@ -567,7 +599,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="18">
+          <li class="never" data-hits="" data-linenumber="21">
             
 
             
