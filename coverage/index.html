@@ -13,7 +13,7 @@
       <img src="./assets/0.13.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2025-04-27T04:00:40+05:30">2025-04-27T04:00:40+05:30</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2025-04-27T04:10:59+05:30">2025-04-27T04:10:59+05:30</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -29,7 +29,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.41
+         2.43
        </span>
     </span> hits/line
     )
@@ -38,12 +38,12 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>3</b> files in total.
+    <b>5</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>37</b> relevant lines,
-    <span class="green"><b>37</b> lines covered</span> and
+    <b>51</b> relevant lines,
+    <span class="green"><b>51</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -72,11 +72,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#0ec64ca5c2a0563f76f728d84015e7ab07031c4e" class="src_link" title="lib/string_calculator.rb">lib/string_calculator.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">14</td>
-            <td class="cell--number">8</td>
-            <td class="cell--number">8</td>
+            <td class="cell--number">16</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">10</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">4.88</td>
+            <td class="cell--number">4.70</td>
             
           </tr>
         
@@ -88,6 +88,28 @@
             <td class="cell--number">9</td>
             <td class="cell--number">0</td>
             <td class="cell--number">2.67</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#cefb45546e8817c68704598f6c72bb3c75045b42" class="src_link" title="lib/string_calculator/validator.rb">lib/string_calculator/validator.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">17</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">3.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#92ea49ad6341c806409a36e117a7c44a48ee5c34" class="src_link" title="spec/string_calculator/validator_spec.rb">spec/string_calculator/validator_spec.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">13</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.20</td>
             
           </tr>
         
@@ -133,8 +155,8 @@
     
 
     <div class="t-line-summary">
-      <b>8</b> relevant lines.
-      <span class="green"><b>8</b> lines covered</span> and
+      <b>10</b> relevant lines.
+      <span class="green"><b>10</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -178,24 +200,24 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="4">
-            
-
-            
-
-            <code class="ruby"># StringCalculator is a utility to sum numbers from a string input.</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="5">
+          <li class="covered" data-hits="1" data-linenumber="4">
             
               <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">class StringCalculator</code>
+            <code class="ruby">require_relative &#39;string_calculator/validator&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+
+            
+
+            <code class="ruby"># StringCalculator is a utility to sum numbers from a string input.</code>
           </li>
         </div>
       
@@ -207,12 +229,24 @@
 
             
 
+            <code class="ruby">class StringCalculator</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            
+              <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">  def self.add(numbers)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="8" data-linenumber="7">
+          <li class="covered" data-hits="8" data-linenumber="8">
             
               <span class="hits">8</span>
             
@@ -224,24 +258,12 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="8">
+          <li class="never" data-hits="" data-linenumber="9">
             
 
             
 
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="7" data-linenumber="9">
-            
-              <span class="hits">7</span>
-            
-
-            
-
-            <code class="ruby">    delimiter, processed_input = DelimiterParser.parse(numbers)</code>
           </li>
         </div>
       
@@ -253,7 +275,7 @@
 
             
 
-            <code class="ruby">    delimiters = [delimiter, &quot;\n&quot;]</code>
+            <code class="ruby">    delimiter, processed_input = DelimiterParser.parse(numbers)</code>
           </li>
         </div>
       
@@ -265,7 +287,7 @@
 
             
 
-            <code class="ruby">    nums = processed_input.split(Regexp.union(delimiters)).map(&amp;:to_i)</code>
+            <code class="ruby">    delimiters = [delimiter, &quot;\n&quot;]</code>
           </li>
         </div>
       
@@ -277,12 +299,36 @@
 
             
 
+            <code class="ruby">    nums = processed_input.split(Regexp.union(delimiters)).map(&amp;:to_i)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="13">
+            
+              <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    Validator.validate!(nums)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="14">
+            
+              <span class="hits">7</span>
+            
+
+            
+
             <code class="ruby">    nums.sum</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="13">
+          <li class="never" data-hits="" data-linenumber="15">
             
 
             
@@ -292,7 +338,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="14">
+          <li class="never" data-hits="" data-linenumber="16">
             
 
             
@@ -522,6 +568,392 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="18">
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="cefb45546e8817c68704598f6c72bb3c75045b42">
+  <div class="header">
+    <h3>lib/string_calculator/validator.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>7</b> relevant lines.
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="1">
+            
+
+            
+
+            <code class="ruby"># frozen_string_literal: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="3">
+            
+
+            
+
+            <code class="ruby"># Module for string calculation functionality</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class StringCalculator</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+
+            
+
+            <code class="ruby">  # Error raised when negative numbers are present in input.</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  class NegativeError &lt; StandardError; end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+
+            
+
+            <code class="ruby">  # Validates numbers for negative values and raises errors if needed.</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  class Validator</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def self.validate!(numbers)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="11">
+            
+              <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">      negatives = numbers.select(&amp;:negative?)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="12">
+            
+              <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">      return if negatives.empty?</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      raise NegativeError, &quot;Negatives not allowed: #{negatives.join(&#39;, &#39;)}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="92ea49ad6341c806409a36e117a7c44a48ee5c34">
+  <div class="header">
+    <h3>spec/string_calculator/validator_spec.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>5</b> relevant lines.
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="1">
+            
+
+            
+
+            <code class="ruby"># frozen_string_literal: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;string_calculator/validator&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.describe StringCalculator::Validator do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe &#39;.validate!&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            
+              <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &#39;raises error for negatives&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="8">
+            
+              <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">      expect { described_class.validate!([1, -2]) }.to raise_error(</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+
+            
+
+            <code class="ruby">        StringCalculator::NegativeError, /-2/</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+
+            
+
+            <code class="ruby">      )</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
             
 
             
