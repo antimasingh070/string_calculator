@@ -3,6 +3,8 @@
     "coverage": {
       "/home/neosoft/Desktop/string_calculator/spec/string_calculator_spec.rb": {
         "lines": [
+          null,
+          null,
           1,
           null,
           1,
@@ -11,6 +13,27 @@
           2,
           null,
           2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          3,
+          3,
+          null,
+          null,
           null,
           null,
           null
@@ -18,14 +41,28 @@
       },
       "/home/neosoft/Desktop/string_calculator/lib/string_calculator.rb": {
         "lines": [
+          null,
+          null,
+          null,
           1,
           1,
+          6,
+          null,
+          5,
+          5,
+          null,
+          null,
           1,
+          5,
+          null,
+          null,
+          1,
+          5,
           null,
           null
         ]
       }
     },
-    "timestamp": 1745704770
+    "timestamp": 1745705186
   }
 }

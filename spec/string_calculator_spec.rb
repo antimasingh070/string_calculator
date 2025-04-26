@@ -18,5 +18,17 @@ RSpec.describe StringCalculator do
         end
       end
     end
+
+    context 'with multiple numbers' do
+      {
+        '1,5' => 6,
+        '10,20,30' => 60,
+        "1\n2,3" => 6
+      }.each do |input, output|
+        it "returns #{output} for #{input}" do
+          expect(described_class.add(input)).to eq(output)
+        end
+      end
+    end
   end
 end
