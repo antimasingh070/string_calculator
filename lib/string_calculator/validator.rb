@@ -8,10 +8,10 @@ class StringCalculator
   # Validates numbers for negative values and raises errors if needed.
   class Validator
     def self.validate!(numbers)
-      negatives = numbers.select(&:negative?)
+      negatives = numbers.select { |n| n < 0 }
       return if negatives.empty?
 
-      raise NegativeError, "Negatives not allowed: #{negatives.join(', ')}"
+      raise NegativeError, "negative numbers not allowed: #{negatives.join(',')}"
     end
   end
 end
