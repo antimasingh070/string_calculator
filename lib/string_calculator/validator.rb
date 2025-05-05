@@ -9,7 +9,7 @@ class StringCalculator
   class Validator
     def self.validate!(numbers)
       negatives = numbers.select { |n| n < 0 }
-      return if negatives.empty?
+      # return if negatives.empty?
 
       raise NegativeError, "negative numbers not allowed: #{negatives.join(',')}"
     end
